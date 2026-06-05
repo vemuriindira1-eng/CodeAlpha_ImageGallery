@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Smart Image Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Smart Gallery</h1>
+
+<!-- FILTER BUTTONS -->
+<div class="buttons">
+  <button onclick="filterImages('all')">All</button>
+  <button onclick="filterImages('education')">Education</button>
+  <button onclick="filterImages('nature')">Nature</button>
+</div>
+
+<!-- GALLERY -->
+<div class="gallery">
+
+  <img src="https://picsum.photos/id/24/400/300" class="img education" />
+  <img src="https://picsum.photos/id/20/400/300" class="img education" />
+  <img src="https://picsum.photos/id/30/400/300" class="img education" />
+
+  <img src="https://picsum.photos/id/10/400/300" class="img nature" />
+  <img src="https://picsum.photos/id/15/400/300" class="img nature" />
+  <img src="https://picsum.photos/id/28/400/300" class="img nature" />
+
+  <img src="https://picsum.photos/id/40/400/300" class="img nature" />
+  <img src="https://picsum.photos/id/50/400/300" class="img education" />
+  <img src="https://picsum.photos/id/60/400/300" class="img nature" />
+
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox">
+  <span id="close">&times;</span>
+  <img id="lightbox-img">
+  <button id="prev">&#10094;</button>
+  <button id="next">&#10095;</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
